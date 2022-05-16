@@ -14,11 +14,13 @@ export const CreatePet = () => {
 
     return (
         <form>
+            <label>Name: </label>
             <input
                 type='text'
                 value={pet.name}
                 onChange={e => setPet(value => ({...value, name: e.target.value}))}
             />
+            <label>Tag: </label>
             <input
                 type='text'
                 value={pet.tag}
