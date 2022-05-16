@@ -22,6 +22,8 @@
     "typescript": "^4.6.4"
   },
   "scripts": {
+    "prestart": "npm run api:generate",
+    "prebuild": "npm run api:generate",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
